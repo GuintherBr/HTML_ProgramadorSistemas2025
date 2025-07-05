@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Livraria SabiTudo</H1>
+
+    <a href="/aula3_atividade/Loguin.html">Início</a><br>
+    <a href="/aula3_atividade/Loguin.html">Entrar</a> / <a href="/aula3_atividade/cadastro.html">Cadastrar</a><br>
+    <a href="/aula3_atividade/contato.html">Contato</a><br>
+
+    <hr/>
+
+    <h2>Cadastre-se</h2>
+
+    <p>Crie uma conta para poder comprar nossos livros e aproveitar nossas promoções!</p>
+    <p>Você já tem um conta? acesse o painel, <a href="/aula3_atividade/Loguin.html">Clique aqui</a></p>
+
+    <h4>Informações pessoais</h4>
+
+    <form>
+        
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="data de nacimento" id="data" name="data" required>Data de nascimento</label><br>
+        <input type="date" id="data de nascimento" name="data de nascimento" required><br><br>
+
+        <label for="Endereço" id="endereço" name="endereço" required>Endereço</label><br>
+        <input type="text" id="rua" name="rua" placeholder="Rua" required>
+
+
+        <input type="number" id="numero" name="numero" placeholder="Numero" required><br>
+        
+        <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+       
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+
+    </form>
+
+    <h2>Você esta se cadastrando para:</h2>
+
+    <form>
+        <input type="radio" id="comprar livros" name="comprar livros" value="comprar livros">
+        <label for="comprar livros">Comprar Livros</label><br>
+
+        <input type="radio" id="vender livros" name="vender livros" value="vender livros">
+        <label for="vender livros">Vender meus Livros</label><br>
+
+        <input type="radio" id="trocar" name="trocar" value="trocar">
+        <label for="trocar">Trocar Livros</label>
+
+    </form>
+
+    <h2>Dados de Loguim</h2>
+
+    <form action="/aula3_atividade/sucesso.html">
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" minlength="8" required><br><br>
+
+        <label for="confirmar senha">Confirmar Senha:</label><br>
+        <input type="password" id="confirmar senha" name="confirmar senha" minlength="8" required><br><br>
+
+        <input type="checkbox" name="promocoes" id="promocoes" value="sim">
+        <label for="promocoes">Desejo receber promoções e novidades por e-mail</label><br><br>
+
+        <button type="submit">Salvar e continuar</button>
+        
+    </form> 
+
+
+
+</body>
+</html>
