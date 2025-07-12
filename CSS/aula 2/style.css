@@ -1,0 +1,30 @@
+p {
+    color: #d82828;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.on {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.off {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Exemplo {
+    font-size: 18px;
+    color: #322aa2;
+    margin-bottom: 20px;
+}

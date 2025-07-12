@@ -1,0 +1,67 @@
+/*
+
+Paleta de cores (explemplo)
+- Vermelho: #FF0000
+- Verde: #00FF00    
+- Azul: #0000FF
+- Branco: #FFFFFF
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+body {
+    margin: 0px; /* Remove a margem padrão do body */
+}
+
+h1 {
+    color: rgb(219, 148, 148);
+    font-family: "Bitcount Grid Double", system-ui;
+}
+ 
+.regiao {
+    color: rgb(255, 255, 255);
+    font: 18px Arial, sans-serif;
+}
+
+.cabecalho {
+    background-color: #1e1ece; /* Azul */
+   text-align: center;
+    padding: 40px; /* Adiciona preenchimento ao cabeçalho */
+}
+
+.produto {
+    color: #ffffff;
+    font: 15px Arial, sans-serif;
+    background-color: #ec2a2a; 
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Adiciona preenchimento ao botão(por dentro) */
+    border-radius: 8px; /* Arredonda os cantos do botão sendo 50% o max.*/
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */ 
+    margin: 20px 20px 20px 20px; /* Margem aumenta o espaço por foda do botao ou a box */
+    border: 3px solid #000000; /* Borda no botao */
+       
+}
+
+.sabores {
+    color: #d6d1d1; /* Preto */
+    font: 16px Arial, sans-serif;
+    text-align: right; /* Centraliza o texto */
+}
+
+.coxa {
+    font-family: "Bitcount Grid Double", system-ui;
+    color:#ec2a2a
+}
+ 
+.botaoInvertido {
+    background-color: transparent; /* Fundo transparente */
+    border: 4px solid #ec2a2a; /* Borda vermelha */
+    border-radius: 8px;
+    color: #ec2a2a; /* Cor do texto */
+    padding: 10px 20px; /* Preenchimento interno do botão */
+}
+
+.container {
+    margin-left: 50px; /* Margem esquerda de 50px */
+}
