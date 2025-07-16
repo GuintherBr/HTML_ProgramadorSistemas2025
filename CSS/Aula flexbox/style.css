@@ -1,0 +1,18 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.itensMenu{
+    display: flex;
+    gap: 20px;
+}
+
+.configMenu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

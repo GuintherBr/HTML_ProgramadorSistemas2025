@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    margin: 0;
+}
+.linksMenu{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.linksMenu a {
+    color: #444;
+    margin-right:20px;
+    text-decoration: none;
+    border: 10px;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.menu1{
+    display: flex;
+    align-items: center
+}
+
+.menu2{
+    display: flex;
+    justify-content: end; 
+
+
+}
+
+.linksMenu a:hover {
+   text-decoration: underline;
+
+}
+
+.cabecalho{
+    position:relative;
+    padding-top:530px;
+}
+
+.extra{
+    background-color: rgb(244, 244, 244);
+    padding: 30px;
+    margin: 30px 10px;
+    border: solid 1px #b0b0b0;
+      
+}
+
+.imgNova{
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.botao{
+    background-color: rgb(87, 87, 206);
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.paginacao {
+  padding: 20px;
+  margin: 50%;
+  text-align: center;
+    
+}
+
+.cardProduto {
+    background-color: #f9f9f9;
+    width:400px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 3px #8b8787;
+    margin: 50px;
+    
+}
+
+.textoProduto {
+    font-size: 16px;
+    padding: 20px;
+    width: 100%;
+}
+
+.containerProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
