@@ -1,0 +1,114 @@
+
+/* Clonando o site https://templatemo.com/live/templatemo_577_liberty_market */
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-image: url('https://templatemo.com/templates/templatemo_577_liberty_market/assets/images/banner-bg.jpg');
+    color: #fff;
+    background-size: cover; 
+    
+
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin: 0 350px;
+  
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.anuncio {
+    width: 600px;
+    padding: 200px 100px;
+}
+
+.anuncio h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.anuncio p{
+    font-size: 18px;
+}
+
+.botao1{
+    background-color: transparent; 
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px 30px;
+    border-color:blueviolet;
+}
+
+.botao1:hover{
+    background-color: #fff;
+    color:blueviolet
+}
+
+.botao2 {
+    background-color: blueviolet; 
+    border-radius: 30px;
+    color: #fff;
+    padding: 20px 30px;
+
+}
+
+.botao2:hover {
+    background-color: #fff;
+    color: blueviolet;
+}
+
+.baner {
+    width: 600px;
+    padding: 200px 100px;
+
+}
+
+
+.botaoBaner{
+   display: flex;
+   justify-content: center;   
+   gap: 20px;
+}
+
+.bb1{
+  background-color: #fff;
+  border-radius: 50px; 
+  padding: 20px;
+  margin-top: 20px;
+  color: blueviolet;
+  
+}
+
+.bb2{
+    background-color: #fff;
+    border-radius: 50px; 
+    padding: 20px;
+    margin-top: 20px;
+    color: blueviolet;
+    
+}
