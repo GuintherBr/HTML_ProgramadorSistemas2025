@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 JS</title>
+</head>
+<body>
+    <script>
+
+        //Revisao da aula 1 : Variaveis
+
+        //Mostra a mensagem no console do navegador
+        console.log("Revisão de JS")
+
+        //Alert cria uma mensagem na tela e trava o navegador
+        alert("Revisão\nJavaScript")
+
+        //let tomate = 3.5      
+        //let hamburger = 7
+        //let queijo = 4
+
+        let tomate = prompt("Digite o preço do Tomate:") //let tomate = parseInt(prompt ("Digite o preço do Tomate:")) isso é um resumo do codigo 
+        tomate = parseFloat(tomate)
+
+        let hamburger = prompt("Digite o preço do hamburger:")
+        hamburger = parseFloat(hamburger) //parseFloat é utilizado para receber valores quebrados no sistema ex: 6.54 
+
+        let queijo = prompt("Digite o preço do queijo:")
+        queijo = parseFloat(queijo)
+        
+        alert("Cardápio:\nTomate: R$ " + tomate + "\nHamburger: R$ " + hamburger + "\nQueijo: R$ " + queijo)
+
+        let preco_custo = tomate + hamburger + queijo
+        alert("O preço de custo é: R$ " + preco_custo)
+
+        let margem_lucro = 50 //isso é em porcentagem
+        let preco_venda =  preco_custo * margem_lucro / 100 + preco_custo
+        alert("O preço final do produto será: R$ " + preco_venda)// caso apareça numero quebrados com casas numericas maior que 2 casas decimais utiliza-se .tofixed(2) para 2 casas decimais
+        
+
+
+
+    </script>
+    
+</body>
+</html>

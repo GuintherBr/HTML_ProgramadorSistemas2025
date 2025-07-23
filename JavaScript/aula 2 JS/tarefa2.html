@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 2</title>
+</head>
+<body>
+    <script>
+        alert("Bem vindo ao HotDogs São Carlos")
+
+        let salsicha = prompt("Digite o valor da Salsicha:")
+        salsicha = parseFloat(salsicha)
+        let pure = prompt("Digite o valor do pure de Batata:")
+        pure = parseFloat(pure)
+        let salada = prompt("Digite o valor da salada:")
+        salada = parseFloat(salada) 
+       
+
+        const pao = 1.15
+        const batata_palha = 0.95
+
+        const dog = pao + batata_palha
+
+        alert(
+            "O valor do Dog Simples é: R$ " + (dog + salsicha + pure).toFixed(2) + "\n" +
+            "O valor do Dog Duplo é: R$ " + (dog + (salsicha*2) + pure + salada).toFixed(2) + "\n" +
+            "O valor do Dog Especial é: R$ " + (dog + (salsicha*3) + (pure*2) + salada).toFixed(2)
+        )
+
+
+    </script>
+    
+</body>
+</html>
