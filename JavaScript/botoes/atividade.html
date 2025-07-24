@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Carrinho</title>
+</head>
+<body>
+    <h1>Market Smart</h1>
+    <p>Arroz - R$ 15,90</p>
+    <button onclick="adicionarArroz()">Adicionar</button>
+    <button onclick="removerArroz()">Remover</button>
+    <hr>
+    
+    <p>Feijão - R$ 11,40</p>
+    <button onclick="adicionarFeijao()">Adicionar</button>
+    <button onclick="removerFeijao()">Remover</button>
+    <hr>
+
+    <h2>Seu carrinho</h2>
+    <button onclick="verCarrinho()">Ver carrinho</button>
+    <button onclick="limparCarrinho()">Limpar carrinho</button>
+
+    <script>
+
+        const valorArroz = 15.90
+        const valorFeijao = 11.40
+        
+
+        let arroz = 0
+        let feijao = 0
+        
+
+        let itemCarrinho = arroz + feijao
+
+                
+        function adicionarArroz(){
+            arroz++
+            itemCarrinho = arroz + feijao
+            valorArroz
+            
+            
+        }
+        
+        function removerArroz(){
+            arroz--
+            itemCarrinho = arroz + feijao
+            valorArroz
+            
+        }
+        
+        function adicionarFeijao(){
+            feijao++
+            itemCarrinho = arroz + feijao
+            valorFeijao
+
+        }
+        
+        function removerFeijao(){
+            feijao--
+            itemCarrinho = arroz + feijao
+            valorFeijao
+            
+        }
+        
+        function verCarrinho(){
+            alert("Itens no carrinho é: " + itemCarrinho +"\n"+
+            "Qnt arroz: " + arroz +"|" + "Total arroz: R$ "+ (arroz * valorArroz).toFixed(2) + "\n" +
+            "Qnt feijão: "+ feijao +"|" + "Total feijão: R$" + (feijao * valorFeijao).toFixed(2) +"\n\n"
+            + "Total da compra: R$ " + ( (arroz * valorArroz) + (feijao * valorFeijao) ).toFixed(2)
+            
+        )
+    }
+    
+    function limparCarrinho(){
+        arroz = 0
+        feijao = 0
+        valorArroz = 0
+        valorFeijao = 0
+    }
+    
+    
+    
+    
+    
+    
+    
+
+
+    </script>
+   
+
+    
+</body>
+</html>
