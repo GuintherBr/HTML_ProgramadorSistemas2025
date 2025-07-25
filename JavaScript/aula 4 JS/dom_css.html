@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1], initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+    <div id="cadastro" class="animate__animated animate__shakeY">
+
+    <h1>Cadastro</h1>
+    <button onclick="mostrarUsuario()">Cadastro de usuário</button>
+    <br><br>
+    <button onclick="mostrarEmpresa()">Cadastro da empresa</button>
+
+    </div>
+
+    <div id="usuario">
+        <h2>Usuario</h2>
+        <p>Este é o cadastro de usuário</p>
+        <button onclick="mostrarCadastro()">Voltar</button>
+    </div>
+
+
+    <div id="empresa">
+        <h2>Empresa</h2>
+        <p>Este é o cadastro de uma empresa</p>
+        <button onclick="mostrarCadastro()">Voltar</button>
+    </div>
+
+    <script>
+
+       
+        mostrarCadastro()
+
+
+        function esconderTodos(){
+
+            document.querySelector("#cadastro").style.display = "none"
+            document.querySelector("#usuario").style.display = "none"
+            document.querySelector("#empresa").style.display = "none"
+      
+        }
+
+        function mostrarCadastro(){
+            esconderTodos()
+            document.querySelector("#cadastro").style.display = "block"
+        }
+
+        function mostrarUsuario(){
+            esconderTodos()
+            document.querySelector("#usuario").style.display = "block"
+           
+        }
+
+        function mostrarEmpresa(){
+            esconderTodos()
+            document.querySelector("#empresa").style.display = "block" 
+             
+        }
+
+       // function voltar(){
+           // esconderTodos()
+           // mostrarCadastro()
+        
+       
+        
+
+
+
+
+    </script>
+
+
+</body>
+</html>

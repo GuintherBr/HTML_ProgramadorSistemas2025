@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Hotdog</title>
+</head>
+<body>
+    <h1>Atividade Hotdog</h1>
+
+   <p>Digite o valor da salsicha:</p>
+   <input id="inputSalsicha">
+
+   <p>Digite o valor do Purê de Batata:</p>
+   <input id="inputPure">
+
+   <p>Digite o valor da salada:</p>
+    <input id="inputSalada"><br><br>
+
+    <button onclick=cardapio()>Atualizar Cardápio</button>
+
+    <hr>
+
+    <h2>Cardápio</h2>
+
+    <ul>
+
+        <li>Dog simples: R$ <span id="valorSimples">0</span></li>
+        <li>Dog Duplo: R$ <span id="valorDuplo">0</span></li>
+        <li>Dog Especial: R$ <span id="valorEspecial">0</span></li>
+       
+
+    </ul>
+
+    <script>
+
+        let salsicha, pure, salada
+        let simples, duplo, especial
+      
+    
+        const pao = 1.15
+        const batata = 0.95
+       
+
+
+            function cardapio(){
+          
+
+                const dog = pao + batata
+
+                salsicha = parseFloat(document.querySelector("#inputSalsicha").value)
+                pure = parseFloat(document.querySelector("#inputPure").value)
+                salada = parseFloat(document.querySelector("#inputSalada").value)
+        
+                simples = (dog + salsicha + pure).toFixed(2)
+                duplo = (dog + (salsicha*2) + pure + salada).toFixed(2)
+                especial = (dog + (salsicha*3) + (pure*2) + salada).toFixed(2)
+                
+                document.querySelector("#valorSimples").innerHTML = simples
+                document.querySelector("#valorDuplo").innerHTML = duplo
+                document.querySelector("#valorEspecial").innerHTML = especial
+
+                document.querySelector("#inputSalsicha").value = ""
+                document.querySelector("#inputPure").value = ""
+                document.querySelector("#inputSalada").value = ""
+
+            }
+
+
+    </script>
+
+    
+</body>
+</html>

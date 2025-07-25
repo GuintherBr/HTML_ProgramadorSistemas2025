@@ -31,7 +31,7 @@
         let feijao = 0
         
 
-        let itemCarrinho = arroz + feijao
+        let itemCarrinho 
 
                 
         function adicionarArroz(){
@@ -67,7 +67,7 @@
             alert("Itens no carrinho é: " + itemCarrinho +"\n"+
             "Qnt arroz: " + arroz +"|" + "Total arroz: R$ "+ (arroz * valorArroz).toFixed(2) + "\n" +
             "Qnt feijão: "+ feijao +"|" + "Total feijão: R$" + (feijao * valorFeijao).toFixed(2) +"\n\n"
-            + "Total da compra: R$ " + ( (arroz * valorArroz) + (feijao * valorFeijao) ).toFixed(2)
+            + "Total da compra: R$ " + ((arroz * valorArroz) + (feijao * valorFeijao)) .toFixed(2)
             
         )
     }
