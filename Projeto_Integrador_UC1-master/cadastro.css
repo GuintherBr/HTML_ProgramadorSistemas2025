@@ -1,0 +1,19 @@
+
+
+body{
+    background-color: #fffff0;
+    padding: 150px;
+}
+
+.conta{
+    font-size: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+}
+
+.container{
+    font-size: 18px;
+}
+
+
