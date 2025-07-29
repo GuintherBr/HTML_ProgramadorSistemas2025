@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: #fffff0;
+    background-image: url(imagens/A\ futuristic\ financial-themed\ digital\ artwork\ using\ glowing\ green\ tones\,\ inspired\ by\ the\ original\ im.jpeg);
     padding: 150px;
 }
 
@@ -14,6 +14,12 @@ body{
 
 .container{
     font-size: 18px;
+    color: aliceblue;
+}
+
+.container h1{
+    color: aliceblue;
+
 }
 
 
